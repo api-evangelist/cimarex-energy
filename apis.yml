@@ -7,7 +7,7 @@ description: >-
   combined with Cabot Oil & Gas Corporation to form Coterra Energy
   (NYSE: CTRA). No public Cimarex-branded developer APIs exist; all current
   digital channels and any future API offerings are part of Coterra Energy.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cimarex-energy/refs/heads/main/apis.yml
 type: Index
