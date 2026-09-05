@@ -1,0 +1,75 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Live HTTPS probes of /.well-known/* on every host this record names — the
+  historic Cimarex Energy domain (cimarex.com, www.cimarex.com) and the
+  successor site carried in common[] (www.coterra.com). No API baseURL and no
+  OpenAPI servers[] host exists on this record, so there were no further hosts
+  to probe.
+note: >-
+  Recorded absence. cimarex.com still resolves through Cloudflare but the origin
+  no longer presents a valid certificate, so every path — including the site
+  root — answers HTTP 526 (Invalid SSL certificate). www.coterra.com, the
+  successor site, returns an nginx 403 for the whole /.well-known/ directory and
+  serves no discovery document. Nothing here is a served document, therefore NO
+  WellKnown or SecurityTxt pointer is emitted in apis.yml.
+hosts:
+  - host: cimarex.com
+    note: Historic Cimarex Energy domain; Cloudflare-fronted, origin certificate invalid (526) on every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 526
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 526
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 526
+        file: null
+      - path: /.well-known/api-catalog
+        status: 526
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 526
+        file: null
+  - host: www.cimarex.com
+    note: Same Cloudflare origin failure as the apex; 526 on every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 526
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 526
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 526
+        file: null
+      - path: /.well-known/api-catalog
+        status: 526
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 526
+        file: null
+  - host: www.coterra.com
+    note: >-
+      Successor company site (Coterra Energy, NYSE CTRA). The /.well-known/
+      directory is blocked at the web server with an nginx 403 for every path;
+      the site root itself returns 200, so this is a directory policy, not a
+      bot challenge. Any document served here would belong to Coterra Energy,
+      not to Cimarex Energy.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null

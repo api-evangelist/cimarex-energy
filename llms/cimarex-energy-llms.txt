@@ -1,0 +1,49 @@
+# Cimarex Energy
+
+> Cimarex Energy Co. (NYSE: XEC) was an independent oil and gas exploration and
+> production company headquartered in Denver, Colorado, with operations in the
+> Permian Basin of West Texas and southeast New Mexico and in the Mid-Continent
+> region of Oklahoma. On 1 October 2021 Cimarex Energy combined with Cabot Oil &
+> Gas Corporation to form Coterra Energy Inc. (NYSE: CTRA). Cimarex Energy no
+> longer operates as an independent company.
+
+**Status: defunct — merged.** Cimarex Energy publishes no developer program, no
+public API, and no machine-readable contract of any kind. Its historic domain,
+cimarex.com, still resolves through Cloudflare but the origin no longer presents
+a valid TLS certificate, so every path on it answers HTTP 526. No developer,
+api, docs or data subdomain of cimarex.com resolves in DNS. No first-party
+client library exists on npm, PyPI or any other public registry, and there is no
+`cimarex` GitHub organization.
+
+Agents looking for a current corporate or operational surface for this entity
+should follow the successor company, Coterra Energy, and note that Coterra
+itself announced a definitive all-stock merger agreement with Devon Energy on
+2 February 2026.
+
+## Successor
+
+- [Coterra Energy](https://www.coterra.com/): Successor company formed by the
+  October 2021 Cabot Oil & Gas / Cimarex Energy combination; trades as NYSE: CTRA.
+- [Coterra Energy legal notice](https://www.coterra.com/legal-notice/): Terms of
+  use, disclaimers and the Devon Energy merger notice for the successor site.
+
+## Company record
+
+- [Merger announcement](https://www.prnewswire.com/news-releases/cabot-oil--gas-and-cimarex-energy-complete-combination-forming-coterra-energy-301389768.html):
+  PR Newswire release announcing completion of the combination that formed Coterra Energy.
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/cimarex-energy/refs/heads/main/apis.yml):
+  The APIs.json index for this company record.
+
+## Artifacts in this repository
+
+- `security/cimarex-energy-domain-security.yml`: Probed TLS, HSTS, DNSSEC, CAA,
+  SPF and DMARC posture for the hosts this record names.
+- `well-known/cimarex-energy-well-known.yml`: Probed `/.well-known/*` results
+  for cimarex.com, www.cimarex.com and www.coterra.com. Every path is a recorded
+  absence — no discovery document is served on any of them.
+
+## Optional
+
+- No OpenAPI, AsyncAPI, GraphQL, gRPC/Protobuf, WSDL, MCP server or A2A agent
+  card was found for this company. These are honest absences, established by
+  probe, not gaps in this record.

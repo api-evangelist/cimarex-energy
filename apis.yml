@@ -43,7 +43,7 @@ tags:
   - Permian Basin
   - Fortune 1000
 created: '2025-02-21'
-modified: '2026-04-23'
+modified: '2026-09-05'
 specificationVersion: '0.23'
 apis: []
 common:
@@ -56,10 +56,40 @@ common:
   - type: News
     url: >-
       https://www.prnewswire.com/news-releases/cabot-oil--gas-and-cimarex-energy-complete-combination-forming-coterra-energy-301389768.html
-  - type: PrivacyPolicy
-    url: https://www.coterra.com/privacy-policy/
   - type: TermsOfService
-    url: https://www.coterra.com/terms-of-use/
+    url: https://www.coterra.com/legal-notice/
+  - type: LLMsTxt
+    url: llms/cimarex-energy-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Cimarex Energy was fully absorbed into Coterra Energy in October 2021 and its own
+    domain is now broken — cimarex.com still resolves through Cloudflare but the origin
+    presents no valid certificate, so every path including the site root answers HTTP 526
+    rather than redirecting anywhere; no developer/api/docs/data subdomain of cimarex.com
+    resolves in DNS, there is no cimarex GitHub organization, and no first-party package
+    exists on npm or PyPI.
+  evidence:
+    - url: https://cimarex.com/
+      status: 526
+    - url: https://cimarex.com/.well-known/api-catalog
+      status: 526
+    - url: https://www.coterra.com/openapi.json
+      status: 404
+    - url: https://www.coterra.com/.well-known/security.txt
+      status: 403
+    - url: https://www.coterra.com/privacy-policy/
+      status: 404
+  checked: '2026-09-05'
+x-parent: coterra-energy
+x-relationship: merger
+x-acquired: 2021
