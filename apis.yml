@@ -1,12 +1,10 @@
 aid: cimarex-energy
 name: Cimarex Energy
-description: >-
-  Cimarex Energy was an independent oil and gas exploration and production
-  company headquartered in Denver, Colorado, with operations focused in the
-  Permian Basin and the Mid-Continent. In October 2021 Cimarex Energy
-  combined with Cabot Oil & Gas Corporation to form Coterra Energy
-  (NYSE: CTRA). No public Cimarex-branded developer APIs exist; all current
-  digital channels and any future API offerings are part of Coterra Energy.
+description: 'Cimarex Energy was an independent oil and gas exploration and production company headquartered
+  in Denver, Colorado, with operations focused in the Permian Basin and the Mid-Continent. In October
+  2021 Cimarex Energy combined with Cabot Oil & Gas Corporation to form Coterra Energy (NYSE: CTRA). No
+  public Cimarex-branded developer APIs exist; all current digital channels and any future API offerings
+  are part of Coterra Energy.'
 deliveryModel:
   model: saas
   open_source: false
@@ -30,39 +28,37 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cimarex-energy.png
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/cimarex-energy/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/cimarex-energy/refs/heads/main/apis.yml
 type: Index
 access: 1st-Party
 position: Producing
 tags:
-  - Defunct
-  - Energy
-  - Merger
-  - Oil and Gas
-  - Permian Basin
-  - Fortune 1000
+- Defunct
+- Energy
+- Merger
+- Oil and Gas
+- Permian Basin
+- Fortune 1000
 created: '2025-02-21'
-modified: '2026-09-05'
+modified: '2026-09-15'
 specificationVersion: '0.23'
 apis: []
 common:
-  - type: DomainSecurity
-    url: security/cimarex-energy-domain-security.yml
-  - type: Website
-    url: https://www.coterra.com/
-  - type: SuccessorWebsite
-    url: https://www.coterra.com/
-  - type: News
-    url: >-
-      https://www.prnewswire.com/news-releases/cabot-oil--gas-and-cimarex-energy-complete-combination-forming-coterra-energy-301389768.html
-  - type: TermsOfService
-    url: https://www.coterra.com/legal-notice/
-  - type: LLMsTxt
-    url: llms/cimarex-energy-llms.txt
+- type: DomainSecurity
+  url: security/cimarex-energy-domain-security.yml
+- type: Website
+  url: https://www.coterra.com/
+- type: SuccessorWebsite
+  url: https://www.coterra.com/
+- type: News
+  url: https://www.prnewswire.com/news-releases/cabot-oil--gas-and-cimarex-energy-complete-combination-forming-coterra-energy-301389768.html
+- type: TermsOfService
+  url: https://www.coterra.com/legal-notice/
+- type: LLMsTxt
+  url: llms/cimarex-energy-llms.txt
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 x-enrichment:
   date: '2026-09-05'
   status: minimal
@@ -71,25 +67,24 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    Cimarex Energy was fully absorbed into Coterra Energy in October 2021 and its own
-    domain is now broken — cimarex.com still resolves through Cloudflare but the origin
-    presents no valid certificate, so every path including the site root answers HTTP 526
-    rather than redirecting anywhere; no developer/api/docs/data subdomain of cimarex.com
-    resolves in DNS, there is no cimarex GitHub organization, and no first-party package
-    exists on npm or PyPI.
+  detail: Cimarex Energy was fully absorbed into Coterra Energy in October 2021 and its own domain is
+    now broken — cimarex.com still resolves through Cloudflare but the origin presents no valid certificate,
+    so every path including the site root answers HTTP 526 rather than redirecting anywhere; no developer/api/docs/data
+    subdomain of cimarex.com resolves in DNS, there is no cimarex GitHub organization, and no first-party
+    package exists on npm or PyPI.
   evidence:
-    - url: https://cimarex.com/
-      status: 526
-    - url: https://cimarex.com/.well-known/api-catalog
-      status: 526
-    - url: https://www.coterra.com/openapi.json
-      status: 404
-    - url: https://www.coterra.com/.well-known/security.txt
-      status: 403
-    - url: https://www.coterra.com/privacy-policy/
-      status: 404
+  - url: https://cimarex.com/
+    status: 526
+  - url: https://cimarex.com/.well-known/api-catalog
+    status: 526
+  - url: https://www.coterra.com/openapi.json
+    status: 404
+  - url: https://www.coterra.com/.well-known/security.txt
+    status: 403
+  - url: https://www.coterra.com/privacy-policy/
+    status: 404
   checked: '2026-09-05'
 x-parent: coterra-energy
 x-relationship: merger
 x-acquired: 2021
+x-status: defunct
