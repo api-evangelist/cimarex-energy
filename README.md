@@ -1,4 +1,4 @@
-# Cimarex Energy (cimarex-energy)
+# Cimarex Energy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,38 +64,45 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 Cimarex Energy was an independent oil and gas exploration and production company headquartered in Denver, Colorado, with operations focused in the Permian Basin and the Mid-Continent. In October 2021 Cimarex Energy combined with Cabot Oil & Gas Corporation to form Coterra Energy (NYSE: CTRA). No public Cimarex-branded developer APIs exist; all current digital channels and any future API offerings are part of Coterra Energy.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/cimarex-energy/refs/heads/main/apis.yml)
+**Areas:** Defunct · Energy · Merger · Oil and Gas · Permian Basin · Fortune 1000
 
-## Scope
+## Cimarex Energy on APIs.io (historical record)
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** 1st-Party
+Everything profiled for Cimarex Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cimarex-energy/](https://apis.io/providers/cimarex-energy/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Defunct, Energy, Merger, Oil and Gas, Permian Basin
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2025-02-21
-- **Modified:** 2026-04-23
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Cimarex Energy Domain Security](https://apis.io/security/cimarex-energy/cimarex-energy-domain-security/)
 
-No public Cimarex Energy APIs are documented. Cimarex Energy ceased to exist as a standalone company in October 2021 when it merged with Cabot Oil & Gas to form Coterra Energy. Future developer activity should be tracked under the Coterra Energy index.
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Coterra Energy Website](https://www.coterra.com/)
-- [Merger Announcement (PR Newswire)](https://www.prnewswire.com/news-releases/cabot-oil--gas-and-cimarex-energy-complete-combination-forming-coterra-energy-301389768.html)
-- [Privacy Policy](https://www.coterra.com/privacy-policy/)
-- [Terms of Service](https://www.coterra.com/terms-of-use/)
+- [Website](https://www.coterra.com/)
+- [Terms of service](https://www.coterra.com/legal-notice/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-**Email:** kin@apievangelist.com
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cimarex Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cimarex-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
